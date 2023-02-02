@@ -1,0 +1,32 @@
+<div
+  class="bg-image"
+  style="
+    background-image: url('https://img.freepik.com/free-vector/quiz-word-concept_23-2147844150.jpg?w=2000');
+  "
+>
+  <!-- Welcome content page -->
+
+  <div class="container">
+    <div>
+      <h1 class="text-5xl font-extrabold text-center">Welcome to Quizz App</h1>
+    </div>
+    <div>
+      <h1 class="text-center font-semibold text-4xl">All the best!</h1>
+    </div>
+    <div class="text-center">
+      <input placeholder="Enter your Name" [(ngModel)]="name" />
+    </div>
+
+    <!-- button for starting the quiz -->
+    <div class="text-center">
+      <button
+        class="btn btn-primary"
+        type="button"
+        routerLink="/test"
+        (click)="startQuiz()"
+      >
+        Start the quiz
+      </button>
+    </div>
+  </div>
+</div>

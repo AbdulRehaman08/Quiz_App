@@ -1,0 +1,445 @@
+<!-- The Modal for Add-Question  -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Add-Question</h4>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+        ></button>
+      </div>
+
+      <!-- Modal body -->
+
+      <div class="modal-body">
+        <form class="was-validated">
+          <div class="form-group">
+            <div class="mb-2">
+              <label class="form-label" for="validationTooltip01"
+                >Question</label
+              >
+              <textarea
+                [(ngModel)]="question.questionName"
+                id="validationTooltip01"
+                cols="3"
+                rows="2"
+                class="form-control"
+                [ngModelOptions]="{ standalone: true }"
+                required
+              ></textarea>
+              <div class="invalid-feedback">
+                Please enter a message in the textarea.
+              </div>
+            </div>
+            <div class="mb-2">
+              <label class="form-label" for="validationDefault02"
+                >Answer-1</label
+              >
+
+              <input
+                [(ngModel)]="question.answer_1"
+                type="text"
+                class="required"
+                id="validationDefault02"
+                class="form-control"
+                [ngModelOptions]="{ standalone: true }"
+                required
+              />
+            </div>
+            <div class="mb-2">
+              <label class="form-label" for="validationDefault03"
+                >Answer-2</label
+              >
+              <input
+                [(ngModel)]="question.answer_2"
+                type="text"
+                class="required"
+                id="validationDefault03"
+                class="form-control"
+                [ngModelOptions]="{ standalone: true }"
+                required
+              />
+            </div>
+            <div class="mb-2">
+              <label class="form-label" for="validationDefault04"
+                >Answer-3</label
+              >
+
+              <input
+                [(ngModel)]="question.answer_3"
+                type="text"
+                class="required"
+                id="validationDefault04"
+                class="form-control"
+                [ngModelOptions]="{ standalone: true }"
+                required
+              />
+            </div>
+            <div class="mb-2">
+              <label class="form-label" for="validationDefault05"
+                >Answer-4</label
+              >
+              <input
+                [(ngModel)]="question.answer_4"
+                maxlength="45"
+                type="text"
+                class="required"
+                id="validationDefault05"
+                class="form-control"
+                [ngModelOptions]="{ standalone: true }"
+                required
+              />
+            </div>
+            <div class="mb-2">
+              <label class="form-label" for="validationDefault06"
+                >Correct-Answer</label
+              >
+
+              <input
+                [(ngModel)]="question.correctAnswer"
+                type="text"
+                class="required"
+                id="validationDefault06"
+                class="form-control"
+                [ngModelOptions]="{ standalone: true }"
+                required
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button
+          (click)="postQuestions(question)"
+          type="button"
+          class="btn btn-primary"
+          data-bs-dismiss="modal"
+          data-bs-target="#myModal"
+        >
+          ADD
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- The Modal for Edit -->
+<div class="modal" id="Modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Edit-Question</h4>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+        ></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="mb-2">
+          <label class="form-label" for="form6Example4">Question</label>
+          <textarea
+            [(ngModel)]="question.questionName"
+            id="form6Example4"
+            cols="3"
+            rows="2"
+            class="form-control"
+          ></textarea>
+        </div>
+        <div class="mb-2">
+          <label class="form-label" for="form6Example4">Answer-1</label>
+
+          <input
+            [(ngModel)]="question.answer_1"
+            type="text"
+            id="form6Example4"
+            class="form-control"
+          />
+        </div>
+
+        <div class="mb-2">
+          <label class="form-label" for="form6Example4">Answer-2</label>
+
+          <input
+            [(ngModel)]="question.answer_2"
+            type="text"
+            id="form6Example4"
+            class="form-control"
+          />
+        </div>
+        <div class="mb-2">
+          <label class="form-label" for="form6Example4">Answer-3</label>
+
+          <input
+            [(ngModel)]="question.answer_3"
+            type="text"
+            id="form6Example4"
+            class="form-control"
+          />
+        </div>
+        <div class="mb-2">
+          <label class="form-label" for="form6Example4">Answer-4</label>
+          <input
+            [(ngModel)]="question.answer_4"
+            type="text"
+            id="form6Example4"
+            class="form-control"
+          />
+        </div>
+
+        <div class="mb-2">
+          <label class="form-label" for="form6Example4">Correct-Answer</label>
+          <input
+            [(ngModel)]="question.correctAnswer"
+            type="text"
+            id="form6Example4"
+            class="form-control"
+          />
+        </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button
+          (click)="editQuestions(question)"
+          type="button"
+          class="btn btn-primary"
+          data-bs-dismiss="modal"
+          data-bs-target="#Modal"
+        >
+          Save Changes
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- The Modal for view -->
+<div class="modal" id="ModalView">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Details</h4>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+        ></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <label class="form-label" for="form6Example4">Question</label>
+        <textarea
+          [(ngModel)]="question.questionName"
+          id="form6Example4"
+          cols="3"
+          rows="2"
+          class="form-control"
+          disabled
+        ></textarea>
+
+        <label class="form-label" for="form6Example4">Answer-1</label>
+
+        <input
+          [(ngModel)]="question.answer_1"
+          type="text"
+          id="form6Example4"
+          class="form-control"
+          disabled
+        />
+        <label class="form-label" for="form6Example4">Answer-2</label>
+
+        <input
+          [(ngModel)]="question.answer_2"
+          type="text"
+          id="form6Example4"
+          class="form-control"
+          disabled
+        />
+        <label class="form-label" for="form6Example4">Answer-3</label>
+
+        <input
+          [(ngModel)]="question.answer_3"
+          type="text"
+          id="form6Example4"
+          class="form-control"
+          disabled
+        />
+        <label class="form-label" for="form6Example4">Answer-4</label>
+        <input
+          [(ngModel)]="question.answer_4"
+          type="text"
+          id="form6Example4"
+          class="form-control"
+          disabled
+        />
+
+        <label class="form-label" for="form6Example4">Correct-Answer</label>
+        <input
+          [(ngModel)]="question.correctAnswer"
+          type="text"
+          id="form6Example4"
+          class="form-control"
+          disabled
+        />
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer"></div>
+    </div>
+  </div>
+</div>
+
+<!--  The items-per-page dropdown -->
+<section class="bg-light p-5">
+  <div class="d-flex justify-content-start">
+    <table>
+      <tr>
+        <td>Items per page:</td>
+        <td>
+          <select (change)="onPageSizeChange($event)">
+            <option *ngFor="let size of psize" [ngValue]="size">
+              {{ size }}
+            </option>
+          </select>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- The Search button  -->
+  <div class="d-flex justify-content-center">
+    <table>
+      <tr>
+        <td>
+          <input type="text" placeholder="search here.." [(ngModel)]="name" />
+        </td>
+        <td>
+          <button type="button" class="btn btn-info" (click)="search(name)">
+            Search
+          </button>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- The add button for adding-questions  -->
+  <div class="d-grid gap-2 btn-lg d-md-flex justify-content-md-end">
+    <button
+      (click)="clearData()"
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#myModal"
+      class="btn btn-primary btn-sm rounded-0"
+      type="button"
+      data-toggle="tooltip"
+      data-placement="top"
+      title="Add"
+    >
+      <i class="fa fa-table"></i>Add
+    </button>
+  </div>
+
+  <!-- The table for the list of Questions -->
+  <div class="table-responsive" id="no-more-tables">
+    <table class="table -hovetabler bg-white">
+      <thead class="bg-dark text-light text-center">
+        <tr>
+          <th>S.No</th>
+
+          <th (click)="sort()" title="Click here to sort">Question</th>
+          <th>Option_1</th>
+          <th>Option_2</th>
+          <th>Option_3</th>
+          <th>Option_4</th>
+          <th>Correct_Answer</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          *ngFor="
+            let question of QuestionArray
+              | paginate
+                : {
+                    currentPage: page,
+                    itemsPerPage: size
+                  };
+            index as i
+          "
+        >
+          <td class="text-center" data-title="S.No">{{ i + 1 }}</td>
+
+          <th
+            data-title="Question"
+            scope="col"
+            data-bs-toggle="modal"
+            data-bs-target="#ModalView"
+            (click)="edit(question)"
+            title="Click to View!"
+          >
+            {{ question.questionName }}
+          </th>
+
+          <td data-title="Answer_1">{{ question.answer_1 }}</td>
+          <td data-title="Answer_2">{{ question.answer_2 }}</td>
+          <td data-title="answer_3">{{ question.answer_3 }}</td>
+          <td data-title="Answer_4">{{ question.answer_4 }}</td>
+          <td data-title="Correct_Answer">{{ question.correctAnswer }}</td>
+          <td data-title="Actions">
+            <!-- Call to action buttons -->
+            <ul class="list m-0 text-center width: 100%">
+              <li class="list-inline-item">
+                <button
+                  (click)="edit(question)"
+                  data-bs-toggle="modal"
+                  data-bs-target="#Modal"
+                  class="btn btn-success btn-sm rounded-0 edit"
+                  type="button"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Edit"
+                >
+                  <i class="fa fa-edit"></i>Edit
+                </button>
+              </li>
+              <li class="list-inline-item">
+                <button
+                  (click)="deleteQuestion(question.id)"
+                  class="btn btn-danger btn-sm rounded-0"
+                  type="button"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Delete"
+                >
+                  <i class="fa fa-trash"></i>Delete
+                </button>
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- The pagination div -->
+    <div class="pagination justify-content-end">
+      <pagination-controls
+        class="page"
+        previousLabel="Previous"
+        nextLabel="Next"
+        (pageChange)="onPageChange($event)"
+      ></pagination-controls>
+    </div>
+  </div>
+</section>

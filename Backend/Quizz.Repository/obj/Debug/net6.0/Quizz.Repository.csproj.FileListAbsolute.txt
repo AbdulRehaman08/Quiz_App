@@ -1,0 +1,15 @@
+C:\projects\Quiz-App\Quizz.Repository\bin\Debug\net6.0\Quizz.Repository.deps.json
+C:\projects\Quiz-App\Quizz.Repository\bin\Debug\net6.0\Quizz.Repository.dll
+C:\projects\Quiz-App\Quizz.Repository\bin\Debug\net6.0\Quizz.Repository.pdb
+C:\projects\Quiz-App\Quizz.Repository\bin\Debug\net6.0\Quizz.Model.dll
+C:\projects\Quiz-App\Quizz.Repository\bin\Debug\net6.0\Quizz.Model.pdb
+C:\projects\Quiz-App\Quizz.Repository\obj\Debug\net6.0\Quizz.Repository.csproj.AssemblyReference.cache
+C:\projects\Quiz-App\Quizz.Repository\obj\Debug\net6.0\Quizz.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\Quiz-App\Quizz.Repository\obj\Debug\net6.0\Quizz.Repository.AssemblyInfoInputs.cache
+C:\projects\Quiz-App\Quizz.Repository\obj\Debug\net6.0\Quizz.Repository.AssemblyInfo.cs
+C:\projects\Quiz-App\Quizz.Repository\obj\Debug\net6.0\Quizz.Repository.csproj.CoreCompileInputs.cache
+C:\projects\Quiz-App\Quizz.Repository\obj\Debug\net6.0\Quizz.Repository.csproj.CopyComplete
+C:\projects\Quiz-App\Quizz.Repository\obj\Debug\net6.0\Quizz.Repository.dll
+C:\projects\Quiz-App\Quizz.Repository\obj\Debug\net6.0\refint\Quizz.Repository.dll
+C:\projects\Quiz-App\Quizz.Repository\obj\Debug\net6.0\Quizz.Repository.pdb
+C:\projects\Quiz-App\Quizz.Repository\obj\Debug\net6.0\ref\Quizz.Repository.dll

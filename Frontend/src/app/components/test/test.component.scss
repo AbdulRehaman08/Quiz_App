@@ -1,0 +1,104 @@
+// for question and answers
+.container {
+  display: flex;
+
+  flex-direction: row;
+  justify-content: space-between;
+  width: 65%;
+
+  div {
+    width: 100%;
+  }
+}
+
+button {
+  padding: 4px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+p {
+  margin: 0%;
+}
+body {
+  height: 100vh;
+  background-color: bisque;
+  padding: 10px;
+}
+.container {
+  margin: 30px auto;
+  background: white;
+  padding: 20px 15px;
+}
+label.box {
+  display: flex;
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+#one:checked ~ label.first,
+#two:checked ~ label.second,
+#three:checked ~ label.third,
+#four:checked ~ label.forth {
+  border-color: khaki;
+}
+#one:checked ~ label.first .circle,
+#two:checked ~ label.second .circle,
+#three:checked ~ label.third .circle,
+#four:checked ~ label.forth .circle {
+  border: 6px solid khaki;
+  background-color: #fff;
+}
+label.box:hover {
+  background: khaki;
+}
+label.box .course {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+label.box .circle {
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 2px solid #ddd;
+  display: inline-block;
+}
+input[type="radio"] {
+  display: none;
+}
+.btn {
+  border-radius: 5%;
+  padding: 5px 10px;
+  color: black;
+
+  border-color: khaki;
+  background-color: khaki;
+  box-shadow: 0 0 0 0.25rem rgb(243, 234, 151);
+}
+
+// for mobile screen
+@media (max-width: 450px) {
+  .subject {
+    font-size: 12px;
+  }
+}
+
+// for display name
+.name {
+  text-align: center;
+  padding-top: 3px;
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}

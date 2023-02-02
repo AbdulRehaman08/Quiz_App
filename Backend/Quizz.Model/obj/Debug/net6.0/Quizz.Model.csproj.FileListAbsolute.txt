@@ -1,0 +1,12 @@
+C:\projects\Quiz-App\Quizz.Model\bin\Debug\net6.0\Quizz.Model.deps.json
+C:\projects\Quiz-App\Quizz.Model\bin\Debug\net6.0\Quizz.Model.dll
+C:\projects\Quiz-App\Quizz.Model\bin\Debug\net6.0\Quizz.Model.pdb
+C:\projects\Quiz-App\Quizz.Model\obj\Debug\net6.0\Quizz.Model.csproj.AssemblyReference.cache
+C:\projects\Quiz-App\Quizz.Model\obj\Debug\net6.0\Quizz.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\Quiz-App\Quizz.Model\obj\Debug\net6.0\Quizz.Model.AssemblyInfoInputs.cache
+C:\projects\Quiz-App\Quizz.Model\obj\Debug\net6.0\Quizz.Model.AssemblyInfo.cs
+C:\projects\Quiz-App\Quizz.Model\obj\Debug\net6.0\Quizz.Model.csproj.CoreCompileInputs.cache
+C:\projects\Quiz-App\Quizz.Model\obj\Debug\net6.0\Quizz.Model.dll
+C:\projects\Quiz-App\Quizz.Model\obj\Debug\net6.0\refint\Quizz.Model.dll
+C:\projects\Quiz-App\Quizz.Model\obj\Debug\net6.0\Quizz.Model.pdb
+C:\projects\Quiz-App\Quizz.Model\obj\Debug\net6.0\ref\Quizz.Model.dll

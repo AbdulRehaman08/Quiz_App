@@ -1,0 +1,63 @@
+//for mobile screens
+
+@media only screen and (max-width: 880px) {
+  #no-more-tables tbody,
+  #no-more-tables tr,
+  #no-more-tables td {
+    display: block;
+  }
+  #no-more-tables thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  #no-more-tables td {
+    position: relative;
+    padding-left: 50%;
+    border: none;
+  }
+
+  #no-more-tables td::before {
+    content: attr(data-title);
+    position: absolute;
+    left: 6px;
+    font-weight: bold;
+  }
+  #no-more-tables tr {
+    border-bottom: 1px solid khaki;
+  }
+}
+
+// for Add Button
+.d-grid button {
+  padding: 5px;
+  width: 20%;
+  font-size: large;
+}
+
+// for Details pointer
+.table tbody th {
+  cursor: pointer;
+}
+
+.table thead :nth-child(2) {
+  cursor: pointer;
+}
+
+//for edit & delete buttons
+.table ul .btn {
+  display: flex;
+  flex-direction: column;
+}
+
+.d-grid .search {
+  display: flex;
+  flex-direction: column;
+  word-spacing: 2px;
+  align-items: center;
+}
+
+.table td {
+  text-align: center;
+  vertical-align: middle;
+}
